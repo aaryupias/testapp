@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>App Template</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Bootstrap Social CSS -->
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script src="js/solid.js"></script>
+    <script src="js/fontawesome.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+		
+		<!-- back arrow
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+		-->
+            <div class="sidebar-header">
+			<!-- <img src="img/logo.png" /> -->
+			<h3>App Template</h3>
+            </div>
+ 
+            
+			<ul class="list-unstyled components">
+               <!-- <li class="active"> -->
+			   <li>
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="#" class="download">Button</a>
+                </li>
+                <li>
+                    <a href="#" class="article">Back to article</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Page Content  -->
+		
+        <div id="content">
+
+           <nav class="bg-dark text-white" id="nav"> 
+			
+			  <!-- <nav > -->
+                <div class="container-fluid">
+
+                    <a href="index.html">
+					<button class="btn btn-dark btn-lg">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+					</a>
+					
+					<span>Inner Page Design</span>
+					
+					<button type="button" id="sidebarCollapse" class="btn btn-dark float-right btn-lg">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+					
+									
+                   
+ <!-- (dropdown menu right side)
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+					-->
+                </div>
+            </nav>
+<!-- contents area -->
+
+            <a href="#">
+			<div class="border rounded-top border-secondary">
+			<center><h4>Title 1</h4></center>
+            <p>Some text goes here or use image</p>
+			</div>
+			</a>
+            <div class="line"></div>
+			
+			<a href="#">
+			<div class="border rounded-top border-secondary">
+			<center><h4>Title 2</h4></center>
+            <p>Some text goes here or use image</p>
+			</div>
+			</a>
+            <div class="line"></div>
+			
+
+
+            </div>
+
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+	
+</body>
+</html>

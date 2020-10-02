@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.jobsuchana.sansthanexampreparation"
+        version   = "0.1.0">
+
+    <name>Sansthan Exam Preparation</name>
+
+    <description>
+        Sansthan Exam Preparation app is developed to provide very essential materials needed to prepare exam of any sansthan in Nepal. App contains Syllabus, Model Questions, Old Questions of Nepal Oil Corporation, Nepal Telecom, Nepal Electricity Authority, Nepal Food Corporation, Karmachari Sanchaya Kosh and many more.
+    </description>
+
+    <author href="https://www.facebook.com/isRupak" email="rupakbhattarai33@gmail.com">
+        Rupak Bhattarai
+    </author>
+	
+	<!-- Define app icon for each platform. -->
+        <icon src="res/icon/android/36.png" gap:platform="android" gap:density="ldpi" />
+		<icon src="res/icon/android/48.png" gap:platform="android" gap:density="mdpi" />
+		<icon src="res/icon/android/72.png" gap:platform="android" gap:density="hdpi" />
+		<icon src="res/icon/android/96.png" gap:platform="android" gap:density="xhdpi" />
+		<icon src="res/icon/android/144.png" gap:platform="android" gap:density="xxhdpi" />
+		<icon src="res/icon/android/192.png" gap:platform="android" gap:density="xxxhdpi" />
+		
+	
+	<plugin name="cordova-plugin-device" source="npm" />
+	
+	<plugin name="cordova-plugin-inappbrowser" source="npm" />
+	
+	<plugin name="cordova-plugin-x-socialsharing" source="npm" />
+	
+	
+    <!-- Customize your app and platform with the preference element. -->
+	
+    <preference name="android-installLocation" value="auto" />
+	
+	<!-- Whilisting to connect internet -->
+	<content src="index.html" />
+	<plugin name="cordova-plugin-whitelist" source="npm" />
+	<allow-navigation href="*" />
+	<allow-intent href="*" />
+	<access origin="*" />
+         
+		 <!-- Permission -->
+		 
+</widget>

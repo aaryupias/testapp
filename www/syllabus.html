@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>पाठ्यक्रमहरु</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- Bootstrap Social CSS -->
+	<link rel="stylesheet" href="css/bootstrap-social.css">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+
+    <!-- Font Awesome JS -->
+    <script src="js/solid.js"></script>
+    <script src="js/fontawesome.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+		
+		<!-- back arrow
+            <div id="dismiss">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+		-->
+            <div class="sidebar-header">
+			<!-- <img src="img/logo.png" /> -->
+			<h3>संस्थान परिक्षा तयारी</h3>
+            </div>
+ 
+            
+			<ul class="list-unstyled components">
+               <!-- <li class="active"> -->
+			   <li>
+                    <a href="index.html">मुख्य पृष्ठ</a>
+                </li>
+				<li>
+                    <a href="syllabus.html">पाठ्यक्रमहरु</a>
+                </li>
+				<li>
+                    <a href="#model_question.html">नमुना प्रश्नपत्रहरू</a>
+                </li>
+				<li>
+                    <a href="#old_question.html">पुराना प्रश्नपत्रहरू</a>
+                </li>
+				<li>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false">सुचना पाटी</a>
+                        <ul class="collapse list-unstyled" id="pageSubmenu">
+                            <li>
+                                <a href="#">Job Vacancy</a>
+                            </li>
+                            <li>
+                                <a href="#">Exam Schedule</a>
+                            </li>
+                            <li>
+                                <a href="#">Results</a>
+                            </li>
+                        </ul>
+                    </li>	
+            </ul>
+
+            <ul class="list-unstyled components">
+			<li>
+                    <a href="#feedback.html">सुझाव</a>
+            </li>
+			<li>
+                    <a href="#contact.html">सम्पर्क</a>
+            </li>
+			<li>
+                    <a href="#about.html">हाम्रो बारे</a>
+            </li>
+			</ul>			
+        </nav>
+
+        <!-- Page Content  -->
+		
+        <div id="content">
+
+           <nav class="bg-dark text-white" id="nav"> 
+			
+			  
+                    <a href="index.html">
+					<button class="btn btn-dark btn-lg">
+                        <i class="fa fa-arrow-left"></i>
+                    </button>
+					</a>
+					
+					<span>पाठ्यक्रमहरु</span>
+					
+					<button type="button" id="sidebarCollapse" class="btn btn-dark float-right btn-lg">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+                
+            </nav>
+<!-- contents area -->
+
+            <a href="noc.html">
+			<div class="border rounded-top border-secondary">
+			<center><h6>नेपाल आयल निगम</h6></center>
+            <p>नेपाल आयल निगमको सबै पाठ्यक्रमहरु</p>
+			</div>
+			</a>
+            <div class="line"></div>
+			
+			<a href="#nea.html">
+			<div class="border rounded-top border-secondary">
+			<center><h6>नेपाल विधुत प्राधीकरण</h6></center>
+            <p>नेपाल विधुत प्राधीकरणको सबै पाठ्यक्रमहरु</p>
+			</div>
+			</a>
+            <div class="line"></div>
+			
+			<a href="#ntc.html">
+			<div class="border rounded-top border-secondary">
+			<center><h6>नेपाल टेलिकम</h6></center>
+            <p>नेपाल टेलिकमको सबै पाठ्यक्रमहरु</p>
+			</div>
+			</a>
+            <div class="line"></div>
+			
+			<a href="#nfc.html">
+			<div class="border rounded-top border-secondary">
+			<center><h6>नेपाल खाध्य संस्थान</h6></center>
+            <p>नेपाल खाध्य संस्थानको सबै पाठ्यक्रमहरु</p>
+			</div>
+			</a>
+            <div class="line"></div>
+			
+			<a href="#epf.html">
+			<div class="border rounded-top border-secondary">
+			<center><h6>कर्मचारी संचय कोष</h6></center>
+            <p>कर्मचारी संचय कोषको सबै पाठ्यक्रमहरु</p>
+			</div>
+			</a>
+            <div class="line"></div>
+			
+
+
+            </div>
+
+    <div class="overlay"></div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <!-- Popper.JS -->
+    <script src="js/popper.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!--Cordova JS-->
+    <script type="text/javascript" src="cordova.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#dismiss, .overlay').on('click', function () {
+                $('#sidebar').removeClass('active');
+                $('.overlay').removeClass('active');
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').addClass('active');
+                $('.overlay').addClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
+    </script>
+	
+</body>
+</html>
